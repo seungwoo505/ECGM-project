@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>회사소개</title>
+		<meta name="description" content="A Collection of Page Transitions with CSS Animations" />
+		<meta name="keywords" content="page transition, css animation, website, effect, css3, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" type="text/css" href="../css/AboutUs.css" />
+		<link rel="stylesheet" type="text/css" href="../css/animations.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="../js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<header id = "Mainbar">
+		<a href="../index.html">
+			<img src="../image/메인/mainlogo.jpg" id = "logo">
+		</a>
+		
+		<ul>
+			<li><a class = "menu" id = "Company" href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">회사소개</a>
+				<ul id = "CompanySupportingMenu">
+					<li><a href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">인사말</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=1; localStorage.setItem('current', current);">회사연혁</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=2; localStorage.setItem('current', current);">영업종목</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=3; localStorage.setItem('current', current);">인증서 및 수상</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Product" href = "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">제품소개</a>
+				<ul id = "ProductSupportingMenu">
+					<li><a href= "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">일반기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=1; localStorage.setItem('current', current);">열조리기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=2; localStorage.setItem('current', current);">배식대/콘베이어시스템</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=3; localStorage.setItem('current', current);">냉장기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=4; localStorage.setItem('current', current);">세척기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=5; localStorage.setItem('current', current);">소독기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=6; localStorage.setItem('current', current);">식품가공기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=7; localStorage.setItem('current', current);">취반기구/냉온음수대/배기후드</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=8; localStorage.setItem('current', current);">기타기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=9; localStorage.setItem('current', current);">협력사</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Performance" href = "./Performance.html" onclick="current=0; localStorage.setItem('current', current);">시공사진</a></li>
+
+			<li><a class = "menu" id = "Service" href="./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current);">고객센터</a>
+				<ul id = "ServiceSupportingMenu">
+					<li><a href= "./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current);">공지사항</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=1; localStorage.setItem('current', current);">사후관리</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=2; localStorage.setItem('current', current);">자료실</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Directions" href="./directions.html">오시는 길</a></li>
+		</ul>
+	</header>
+
+	<!--중앙에 표시되는 부분-->
+	<div>
+		<div><img id = "minbar" src=""></div>
+	</div>
+
+	<div class="pt-triggers">
+		<button id="page1" class="pt-touch-button">인사말</button>
+		<button id="page2" class="pt-touch-button">회사연혁</button>
+		<button id="page3" class="pt-touch-button">영업종목</button>
+		<button id="page4" class="pt-touch-button">인증서 및 수상</button>
+	</div><!-- /triggers -->
+
+	<div id="pt-main" class="pt-perspective">
+		<div class="pt-page pt-page-1"><img src="../image/회사소개/greetings.jpg"></div>
+		<div class="pt-page pt-page-2">
+			<div class = "cp">
+				<img src="../image/회사소개/회사연혁.jpg">
+			</div>
+			<div id = "round">
+				<div id = "y10" class = "year">
+					2010년대~현재
+				</div>
+
+				<div id = "y00" class = "year">
+					2000년대
+				</div>
+
+				<div id = "y90" class = "year">
+					1990년대
+				</div>
+			</div>
+
+			<div id = "infomation">
+				<img id = "info_img" src="">
+			</div>
+		</div>
+
+		<div class="pt-page pt-page-3"><img src="../image/회사소개/business_item.jpg"></div>
+		<div class="pt-page pt-page-4">
+			<!--인증서및 수상 전체-->
+	<div id = "certification">
+		<!--사진 저장소-->
+		<div id = "grid-container">
+			<!--개별 사진 저장-->
+			<div id = "im01" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img1" src="../image/인증서/1-사업자등록증.jpg">
+					</a>
+				</div>
+				<a id = "txt1">
+					사업자등록증
+				</a>
+			</div>
+			<!--사진 한장 끝-->
+
+			<div id = "im02" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img2" src="../image/인증서/2-공장등록증.jpg">
+					</a>
+				</div>
+				<a id = "txt2">
+					공장등록증
+				</a>
+			</div>
+
+			<div id = "im03" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img3" src="../image/인증서/3-한국상업용조리기계조합등록증.jpg">
+					</a>
+				</div>
+				<a id = "txt3">
+					한국상업용조리기계조합등록증
+				</a>
+			</div>
+
+			<div id = "im04" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img4" src="../image/인증서/4-품질경영시스템인증서.jpg">
+					</a>
+				</div>
+				<a id = "txt4">
+					품질경영시스템인증서
+				</a>
+			</div>
+
+			<!--개별 사진 저장-->
+			<div id = "im05" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img5" src="../image/인증서/5-중소기업확인서.jpg">
+					</a>
+				</div>
+				<a id = "txt5">
+					중소기업확인서
+				</a>
+			</div>
+			<!--사진 한장 끝-->
+
+			<div id = "im06" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img6" src="../image/인증서/6-벤처기업확인서.jpg">
+					</a>
+				</div>
+				<a id = "txt6">
+					벤처기업확인서
+				</a>
+			</div>
+
+			<div id = "im07" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img7" src="../image/인증서/7-가스용품제조사업허가증.jpg">
+					</a>
+				</div>
+				<a id = "txt7">
+					가스용품제조사업허가증
+				</a>
+			</div>
+
+			<div id = "im08" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img8" src="../image/인증서/8-완성검사증명서-2020.jpg">
+					</a>
+				</div>
+				<a id = "txt8">
+					완성검사증명서
+				</a>
+			</div>
+
+			<!--개별 사진 저장-->
+			<div id = "im09" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img9" src="../image/인증서/9-건설업등록증(기계설비시공업).jpg">
+					</a>
+				</div>
+				<a id = "txt9">
+					건설업등록증(기계설비시공업)
+				</a>
+			</div>
+			<!--사진 한장 끝-->
+
+			<div id = "im10" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img10" src="../image/인증서/10-건설업등록증(가스시설시공업).jpg">
+					</a>
+				</div>
+				<a id = "txt10">
+					건설업등록증(가스시설시공업)
+				</a>
+			</div>
+
+			<div id = "im11" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img11" src="../image/인증서/11-여성기업확인서.jpg">
+					</a>
+				</div>
+				<a id = "txt11">
+					여성기업확인서
+				</a>
+			</div>
+
+			<div id = "im12" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img12" src="../image/인증서/12-기술혁신이노비즈확인서.jpg">
+					</a>
+				</div>
+				<a id = "txt12">
+					기술혁신이노비즈확인서
+				</a>
+			</div>
+
+			<!--개별 사진 저장-->
+			<div id = "im13" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img13" src="../image/인증서/13-기업은행패밀리기업-2019.jpg">
+					</a>
+				</div>
+				<a id = "txt13">
+					기업은행패밀리기업
+				</a>
+			</div>
+			<!--사진 한장 끝-->
+
+			<div id = "im14" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img14" src="../image/인증서/14-무역업고유번호.jpg">
+					</a>
+				</div>
+				<a id = "txt14">
+					무역업고유번호부여증
+				</a>
+			</div>
+
+			<div id = "im15" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img15" src="../image/인증서/15-상표등록증0632952.jpg">
+					</a>
+				</div>
+				<a id = "txt15">
+					상표등록증(0632952)
+				</a>
+			</div>
+
+			<div id = "im16" class = "location_imgs">
+				<div class = "location_img">
+					<a>
+						<img id = "img16" src="../image/인증서/16-상표등록증0655940.jpg">
+					</a>
+				</div>
+				<a id = "txt16">
+					상표등록증(40-0655940)
+				</a>
+			</div>
+		</div>
+
+		<!--클릭했을때 확대 기능-->
+		<div id = "myModal">
+			<span class = "close">&times;</span>
+			<h1 id = "explanation"></h1>
+			<img id = "bigimg">
+		</div>
+
+		<!--갤러리 현 구역과 다른 구역 이동-->
+    	<div class = "paginate">
+      		<strong id = "one" onclick = "one()">1</strong> <!-- 현재 선택된 페이지-->
+      		<a id = "two" onclick = "two()">2</a>
+    	</div>
+	</div>
+		</div>
+	</div>
+
+	<footer id = "footer">
+		<img src = ../image/메인/Botton.jpeg>
+	</footer>
+	</body>
+	<script src="../js/AboutUs.js"></script>
+	<script src="../js/Page_AboutUs.js"></script>
+</html>

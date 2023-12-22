@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>오시는 길</title>
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=o9alob2bbd&callback=CALLBACK_FUNCTION"></script>
+	<link rel="stylesheet" type="text/css" href="../css/directions.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+<body>
+	<header id = "Mainbar">
+		<a href="../index.html">
+			<img src="../image/메인/mainlogo.jpg" id = "logo">
+		</a>
+		
+		<ul>
+			<li><a class = "menu" id = "Company" href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">회사소개</a>
+				<ul id = "CompanySupportingMenu">
+					<li><a href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">인사말</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=1; localStorage.setItem('current', current);">회사연혁</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=2; localStorage.setItem('current', current);">영업종목</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=3; localStorage.setItem('current', current);">인증서 및 수상</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Product" href = "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">제품소개</a>
+				<ul id = "ProductSupportingMenu">
+					<li><a href= "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">일반기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=1; localStorage.setItem('current', current);">열조리기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=2; localStorage.setItem('current', current);">배식대/콘베이어시스템</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=3; localStorage.setItem('current', current);">냉장기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=4; localStorage.setItem('current', current);">세척기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=5; localStorage.setItem('current', current);">소독기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=6; localStorage.setItem('current', current);">식품가공기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=7; localStorage.setItem('current', current);">취반기구/냉온음수대/배기후드</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=8; localStorage.setItem('current', current);">기타기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=9; localStorage.setItem('current', current);">협력사</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Performance" href = "./Performance.html" onclick="current=0; localStorage.setItem('current', current);">시공사진</a></li>
+
+			<li><a class = "menu" id = "Service" href="./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current);">고객센터</a>
+				<ul id = "ServiceSupportingMenu">
+					<li><a href= "./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current); ">공지사항</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=1; localStorage.setItem('current', current);">사후관리</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=2; localStorage.setItem('current', current);">자료실</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Directions" href="./directions.html">오시는 길</a></li>
+		</ul>
+	</header>
+
+	<div>
+		<div><img id = "minbar" src="../image/소개바/오시는길.jpg"></div>
+	</div>
+
+	<div id="map"></div>
+
+	<div id = "footer">
+		<img src = ../image/메인/Botton.jpeg>
+	</div>
+	<script type="text/javascript" src = "../js/directions.js"></script>
+</body>
+</html>

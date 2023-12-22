@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>시공사진</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/Performance.css">
+	<link rel="stylesheet" type="text/css" href="../css/animations.css">
+	<script type="text/javascript" src = "../js/modernizr.custom.js"></script>
+</head>
+<body>
+	<header id = "Mainbar">
+		<a href="../index.html">
+			<img src="../image/메인/mainlogo.jpg" id = "logo">
+		</a>
+		
+		<ul>
+			<li><a class = "menu" id = "Company" href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">회사소개</a>
+				<ul id = "CompanySupportingMenu">
+					<li><a href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">인사말</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=1; localStorage.setItem('current', current);">회사연혁</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=2; localStorage.setItem('current', current);">영업종목</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=3; localStorage.setItem('current', current);">인증서 및 수상</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Product" href = "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">제품소개</a>
+				<ul id = "ProductSupportingMenu">
+					<li><a href= "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">일반기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=1; localStorage.setItem('current', current);">열조리기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=2; localStorage.setItem('current', current);">배식대/콘베이어시스템</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=3; localStorage.setItem('current', current);">냉장기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=4; localStorage.setItem('current', current);">세척기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=5; localStorage.setItem('current', current);">소독기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=6; localStorage.setItem('current', current);">식품가공기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=7; localStorage.setItem('current', current);">취반기구/냉온음수대/배기후드</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=8; localStorage.setItem('current', current);">기타기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=9; localStorage.setItem('current', current);">협력사</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Performance" href = "./Performance.html" onclick="current=0; localStorage.setItem('current', current);">시공사진</a></li>
+
+			<li><a class = "menu" id = "Service" href="./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current);">고객센터</a>
+				<ul id = "ServiceSupportingMenu">
+					<li><a href= "./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current); ">공지사항</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=1; localStorage.setItem('current', current);">사후관리</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=2; localStorage.setItem('current', current);">자료실</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Directions" href="./directions.html">오시는 길</a></li>
+		</ul>
+	</header>
+
+	<div>
+		<div><img id = "minbar" src="../image/소개바/시공사진.jpg"></div>
+	</div>
+
+	<div class="pt-triggers">
+		<button id="page1" class="pt-touch-button">거래처</button>
+		<button id="page2" class="pt-touch-button">시공사진</button>
+	</div><!-- /triggers -->
+
+	<div id="pt-main" class="pt-perspective">
+		<div class="pt-page pt-page-1"><img src="../image/시공사진/Enterprise.jpg"></div>
+		<div class="pt-page pt-page-2">
+			<!--인증서및 수상 전체-->
+			<div id = "certification">
+				<!--사진 저장소-->
+				<div id = "grid-container">
+					<!--개별 사진 저장-->
+					<div id = "im01" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img1" src="../image/시공사진/시공사진1.jpg">
+							</a>
+						</div>
+					</div>
+					<!--사진 한장 끝-->
+
+					<div id = "im02" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img2" src="../image/시공사진/시공사진2.jpg">
+							</a>
+						</div>
+					</div>
+
+					<div id = "im03" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img3" src="../image/시공사진/시공사진3.jpg">
+							</a>
+						</div>
+					</div>
+
+					<div id = "im04" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img4" src="../image/시공사진/시공사진4.jpg">
+							</a>
+						</div>
+					</div>
+
+					<!--개별 사진 저장-->
+					<div id = "im05" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img5" src="../image/시공사진/시공사진5.jpg">
+							</a>
+						</div>
+					</div>
+					<!--사진 한장 끝-->
+
+					<div id = "im06" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img6" src="../image/시공사진/시공사진6.jpg">
+							</a>
+						</div>
+					</div>
+
+					<div id = "im07" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img7" src="../image/시공사진/시공사진7.jpg">
+							</a>
+						</div>
+					</div>
+
+					<div id = "im08" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img8" src="../image/시공사진/시공사진8.jpg">
+							</a>
+						</div>
+					</div>
+
+					<!--개별 사진 저장-->
+					<div id = "im09" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img9" src="../image/시공사진/시공사진9.jpg">
+							</a>
+						</div>
+					</div>
+					<!--사진 한장 끝-->
+
+					<div id = "im10" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img10" src="../image/시공사진/시공사진10.jpg">
+							</a>
+						</div>
+					</div>
+
+					<div id = "im11" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img11" src="../image/시공사진/시공사진11.jpg">
+							</a>
+						</div>
+					</div>
+
+					<div id = "im12" class = "location_imgs">
+						<div class = "location_img">
+							<a>
+								<img id = "img12" src="../image/시공사진/시공사진12.jpg">
+							</a>
+						</div>
+					</div>
+
+					<!--갤러리 현 구역과 다른 구역 이동-->
+    				<div class = "paginate">
+      					<strong id = "one" onclick = "one()">1</strong> <!-- 현재 선택된 페이지-->
+      					<a id = "two" onclick = "two()">2</a>
+      					<a id = "three" onclick = "three()">3</a>
+      					<a id = "four" onclick = "four()">4</a>
+      					<a id = "five" onclick = "five()">5</a>
+    				</div>
+				</div>
+			</div>
+		</div>
+		<!--클릭했을때 확대 기능-->
+		<div id = "myModal">
+			<span class = "close">&times;</span>
+			<h1 id = "explanation"></h1>
+			<img id = "bigimg">
+		</div>
+	</div>
+
+	<div id = "footer">
+		<img src = "../image/메인/Botton.jpeg">
+	</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="../js/Page_Performance.js"></script>
+<script type="text/javascript" src="../js/Performance.js"></script>
+</html>

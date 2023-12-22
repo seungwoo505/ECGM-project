@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+	<link rel="stylesheet" type="text/css" href="../css/table.css">
+	<link rel="stylesheet" type="text/css" href="../css/animations.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/ServiceCenter.css">
+	<script type="text/javascript" src="../js/modernizr.custom.js"></script>
+	<meta charset="utf-8">
+	<title>고객센터</title>
+</head>
+<body>
+	<header id = "Mainbar">
+		<a href="../index.html">
+			<img src="../image/메인/mainlogo.jpg" id = "logo">
+		</a>
+		
+		<ul>
+			<li><a class = "menu" id = "Company" href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">회사소개</a>
+				<ul id = "CompanySupportingMenu">
+					<li><a href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">인사말</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=1; localStorage.setItem('current', current);">회사연혁</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=2; localStorage.setItem('current', current);">영업종목</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=3; localStorage.setItem('current', current);">인증서 및 수상</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Product" href = "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">제품소개</a>
+				<ul id = "ProductSupportingMenu">
+					<li><a href= "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">일반기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=1; localStorage.setItem('current', current);">열조리기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=2; localStorage.setItem('current', current);">배식대/콘베이어시스템</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=3; localStorage.setItem('current', current);">냉장기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=4; localStorage.setItem('current', current);">세척기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=5; localStorage.setItem('current', current);">소독기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=6; localStorage.setItem('current', current);">식품가공기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=7; localStorage.setItem('current', current);">취반기구/냉온음수대/배기후드</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=8; localStorage.setItem('current', current);">기타기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=9; localStorage.setItem('current', current);">협력사</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Performance" href = "./Performance.html" onclick="current=0; localStorage.setItem('current', current);">시공사진</a></li>
+
+			<li><a class = "menu" id = "Service" href="./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current);">고객센터</a>
+				<ul id = "ServiceSupportingMenu">
+					<li><a href= "./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current); ">공지사항</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=1; localStorage.setItem('current', current);">사후관리</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=2; localStorage.setItem('current', current);">자료실</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Directions" href="./directions.html">오시는 길</a></li>
+		</ul>
+	</header>
+	
+	<div>
+		<div><img id = "minbar" src=""></div>
+	</div>
+
+	<div class="pt-triggers">
+		<button id="page1" class="pt-touch-button">공지사항</button>
+		<button id="page2" class="pt-touch-button">사후관리</button>
+		<button id="page3" class="pt-touch-button">자료실</button>
+	</div>
+
+	<div id="pt-main" class="pt-perspective">
+		<div class="pt-page pt-page-1">
+			<table class = "table table-striped table-hover">
+				<thead>
+					<tr id = "title">
+						<th class = "number">번호</th>
+						<th class = "title">제목</th>
+						<th class = "name">작성자</th>
+						<th class = "data">날짜</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr id = "data1" class = "notice" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="posts1">
+							<th class = "number">1</th>
+							<th class = "title">홈페이지가 새롭게 단장했습니다.</th>
+							<th class = "name">관리자</th>
+							<th class = "data">2020-09-01</th>
+					</tr>
+					<tr id = "posts1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="posts1">
+							<th class = "sub" colspan="4" class="panel-body"><br>억조종합기계(주) 홈페이지를 새롭게 단장했습니다.<br>
+							많은 방문 바랍니다<br><br><br><br><br><br><br><br></th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="pt-page pt-page-2"><img src="../image/고객센터/사후관리.jpg"></div>
+		<div class="pt-page pt-page-3"></div>
+	</div>
+
+	<div id = "footer">
+		<img src = ../image/메인/Botton.jpeg>
+	</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/Page_ServiceCenter.js"></script>
+<script type="text/javascript" src="../js/ServiceCenter.js"></script>
+</html>

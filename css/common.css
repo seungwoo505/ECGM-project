@@ -1,0 +1,159 @@
+/**
+	이 부분부터 메인바 부분
+*/
+
+@font-face{
+	font-family: 'SCDream4';
+	src: url("../font/SCDream4.otf") format('truetype');
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	font-family: 'SCDream4';
+	font-size: 1.0vw;
+	margin: 0;
+}
+
+button{
+	font-family: 'SCDream4';
+}
+
+#Mainbar > a{
+	height: auto;
+	width: 15rem;
+	padding: 0 0 0 3rem;
+}
+#logo{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
+
+#Mainbar{
+	height: 10%; /*75px*/
+	padding: 1rem 1rem 0 1rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0);
+	z-index: 2;
+}
+
+.menu{
+	color: #616161;
+	font-weight:bold;
+	margin:0px;
+	text-align:center;
+	text-decoration:none;
+	width: 100%;
+	padding: 0 4rem 0 4rem;
+}
+
+#Mainbar > ul{
+	position: relative;
+	border:none;
+	border:0px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width: 100%;
+	text-align: center;
+	height: auto;
+	height: 50%;
+	vertical-align: middle;
+}
+
+#Mainbar > ul > li{
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+
+#Mainbar > ul > li > a{
+	font-size: 1.2rem;
+}
+
+li{
+	list-style-type: none;
+}
+
+#Mainbar > ul > li > ul{
+	width: 100%;
+	font-size: 0;
+	position: absolute;
+	float: left;
+}
+
+#Mainbar > ul > li > ul{
+	opacity: 0;
+	visibility: hidden;
+	height: auto;
+	border: 0px;
+	z-index: 200;
+	padding: 0;
+	transition: all 0.3s ease-in;
+}
+
+#Mainbar > ul > li > a:hover, #Mainbar > ul > li:hover > a{
+	background: rgba(71,71,71, 0.1);
+	border: 0px;
+}
+
+#Mainbar > ul > li:hover > ul{
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in;
+}
+
+#Mainbar li li {
+	background: rgba(71, 71, 71, 1);
+	display:block;
+	float:none;
+	margin:0px;
+	width: 100%;
+}
+
+#Mainbar li ul a{
+	display:block;
+	width: auto;
+	font-size:0.85rem;
+	font-style:normal;
+	line-height: 3rem;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#Mainbar > ul > li > ul > li > a:hover, #Mainbar > ul > li > ul > li:hover > a{
+	background: rgba(0, 0, 0, 0.3);
+	border:0px;
+}
+
+#minbar{
+	height: 100%;
+	width: 100%;
+}
+
+/**
+	하단바에 대한 부분입니다.
+*/
+
+#footer{
+	margin: 1% 0 0 0;
+}
+#footer img{
+	width: 100%;
+	height: 100%;
+}
+
+@media all and (min-width: 2000px){
+	html, body{
+		width: 2000px;
+		height: 100%;
+		font-size: 18px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

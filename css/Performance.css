@@ -1,0 +1,221 @@
+.grid-container{
+  width: 100%;
+  height: 100%;
+}
+.pt-triggers {
+	width: 100%;
+	text-align: center;
+}
+
+.shadow{
+  box-shadow: 4px 4px 4px rgba(207, 107, 57, 0.6);
+  color: rgba(207, 107, 57, 1.0);
+}
+
+.pt-touch-button {
+	border: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+	margin: 10px 0 20px;
+	padding: 0px 20px;
+	line-height: 50px;
+	height: 50px;
+	letter-spacing: 1px;
+	width: 39%;
+	cursor: pointer;
+	display: inline-block;
+	box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.pt-touch-button:focus{
+  outline: none;
+}
+
+.pt-touch-button:active {
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.pt-touch-button:hover{
+  box-shadow: 4px 4px 4px rgba(207, 107, 57, 0.6);
+  color: rgba(207, 107, 57, 1.0);
+}
+
+.shadow{
+  box-shadow: 4px 4px 4px rgba(207, 107, 57, 0.6);
+  color: rgba(207, 107, 57, 1.0);
+  font-weight: 700;
+}
+
+
+.pt-page-ontop {
+	z-index: 999;
+}
+
+.pt-page {
+	width: 100%;
+	height: 100%;
+  display: none;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.pt-perspective {
+	width: 100%;
+	height: auto;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.pt-page-1{
+	text-align: center;
+}
+
+.pt-page-current,
+.no-js .pt-page {
+  display: inline-block;
+	visibility: visible;
+	z-index: 1;
+}
+
+/*페이지 1 설정*/
+.pt-page-1 > img {
+	width: 80%;
+	height: auto;
+}
+
+/*페이지 2 설정*/
+
+#certification{
+  width: 84%;
+  height: 100%;
+  text-align: center;
+  margin-left: 8%;
+}
+
+.location_imgs{
+  width: 23%;
+  height: 23%;
+  display: inline-block;
+  margin: 0.5%;
+}
+
+.location_imgs > a{
+  display: block;
+  padding: 1.5% 0 1.5% 0;
+  background-color: #f1f3f5;
+}
+
+.location_img > a > img{
+  width: 90%;
+  height: auto;
+  margin: 5% 0 5% 0;
+  border-radius: 50px 0 50px 0 / 50px 0 50px 0;
+}
+
+/*개시판 하단바에 대한 설정*/
+.paginate{
+  padding:16px 0 0;
+  text-align:center;
+}
+/*개시판 번호에 대한 설정*/
+.paginate a,.paginate strong{
+  display:inline-block;
+  position:relative;
+  width:17px;
+  margin-right:1px;
+  padding:2px 4px 3px;
+  border:1px solid #f5f2ed;
+  color:#666;
+  font-family:Verdana;
+  font-size:11px;
+  font-weight:bold;
+  line-height:normal;
+  text-decoration:none;
+}
+/*현재 선택된 페이지에 대한 설정*/
+.paginate strong{
+  border:1px solid #928070;
+  color:#f52d2d !important;
+}
+/*다른 페이지를 가까이 했을때 생기는 효과 설정*/
+.paginate a:hover{
+  border:1px solid #e9e9e9;
+  color:#FFF; 
+  background-color:#939393 !important;
+}
+
+#myModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 1%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  text-align: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#myModal::-webkit-scrollbar{
+  display: none;
+}
+#explanation{
+  color: #ffffff;
+}
+
+#bigimg{
+  width: 60%;
+  height: auto;
+  max-height: 90%;
+}
+
+/*사진을 확대할때 갑자기 뜨는 것보다 애니메이션 효과를 주는 것이 효과적이라 생각해 애니메이션 효과를 줌*/
+#bigimg, #explanation{
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/*사진을 전체 화면에서 다시 원상복구를 하는 버튼에 대한 설정*/
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+/*버튼을 가까이 가져갔을때에 대한 설정*/
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

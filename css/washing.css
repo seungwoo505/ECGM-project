@@ -1,0 +1,17 @@
+#washing_bigimg{
+  width: 90%;
+  height: auto;
+}
+
+#second_washing_bigimg{
+  width: 70%;
+  height: auto;
+}
+
+#second_washing_thead, #second_washing_tbody{
+  text-align: center;
+}
+
+#second_washing_thead{
+  background-color: #f1f3f5;
+}

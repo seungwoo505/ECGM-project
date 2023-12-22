@@ -1,0 +1,173 @@
+/**
+	이 부분부터 슬라이드 부분
+*/
+#slide{
+	width: 100%;
+	height: 40%;
+	position: relative;
+}
+
+#slide > ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#slide > ul > li{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#slide > ul > li > img{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#middles{
+	width: 100%;
+	height: 30%;
+}
+
+#sidebar{
+	float:left;
+	width: 15%;
+	height: auto;
+}
+
+#call{
+	width: 100%;
+	height: auto;
+}
+#mp{
+	align-items: center;
+	color: rgb(207, 107, 57);
+	margin: 4% 0 0 3%;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 1.4rem;
+}
+
+#mp::before,
+#mp::after{
+	content: "";
+	flex-grow: 0.1;
+	background: rgb(207, 107, 57);
+	height: 2px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 16px;
+}
+
+#intro{
+	margin-left: 15%;
+	width: 85%;
+	height: 100%;
+}
+
+#middle_slide{
+	width: 97%;
+	height: 97%;
+	padding-top: 3%;
+	position: relative;
+	overflow: hidden;
+	margin-left: 3%;
+}
+
+#middle_slide > ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#middle_slide > ul > li{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#middle_slide > ul > li > img{
+	list-style: none;
+	width: 17%;
+	height: auto;
+	object-fit: cover;
+	margin-left: 7%;
+	position: absolute;
+	top: -15%;
+}
+
+#middle_slide > ul > li > div{
+	float: left;
+	width: 78%;
+	height: 100%;
+	margin-left: 15%;
+}
+
+#middle_slide > ul > li > div > h1{
+	margin-left: 22%;
+	margin-top: 1%;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#middle_slide > ul > li > div > p{
+	margin-left: 22%;
+	margin-top: 2.5%;
+	line-height: 1.7rem;
+	font-size: 1.02rem;
+}
+
+#middle_slide > ul > li > div > div{
+	text-align: right;
+	margin-right: 10%;
+}
+
+#middle_slide > ul > li > div > div > a > button{
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	background-color: #f1f3f5;
+	width: 20%;
+	padding: 0.5% 0;
+	font-size: 0.95rem;
+	font-family: 'SCDream4';
+}
+
+#middle_slide > ul > li > div > div > a > button:hover{
+	background-color: rgba(207, 107, 57, 0.6);
+}
+
+#middle_slide > ul > li > div > div > a > button:focus{
+	outline: none;
+}
+
+.prev, .next{
+	font-size: 2rem;
+	margin-top: 3%;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+.prev{
+	float: left;
+}
+
+.next{
+	float: right;
+	margin-right: 2%;
+}
+
+.prev:hover, .next:hover{
+	color: rgba(0, 0, 0, 0.8);
+}
+
+#footer{
+	padding: 4% 0 0 0;
+}

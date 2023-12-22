@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>제품소개</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/IntroductionOfItem.css">
+	<link rel="stylesheet" type="text/css" href="../css/animations.css">
+	<link rel="stylesheet" type="text/css" href="../css/gas.css">
+	<link rel="stylesheet" type="text/css" href="../css/genenal.css">
+	<link rel="stylesheet" type="text/css" href="../css/partner.css">
+	<link rel="stylesheet" type="text/css" href="../css/process.css">
+	<link rel="stylesheet" type="text/css" href="../css/refrigerator.css">
+	<link rel="stylesheet" type="text/css" href="../css/OtherDevices.css">
+	<link rel="stylesheet" type="text/css" href="../css/distribution.css">
+	<link rel="stylesheet" type="text/css" href="../css/disinfection.css">
+	<link rel="stylesheet" type="text/css" href="../css/washing.css">
+	<link rel="stylesheet" type="text/css" href="../css/kitchen.css">
+	<script type="text/javascript" src="../js/modernizr.custom.js"></script>
+</head>
+<body>
+	<header id = "Mainbar">
+		<a href="../index.html">
+			<img src="../image/메인/mainlogo.jpg" id = "logo">
+		</a>
+		
+		<ul>
+			<li><a class = "menu" id = "Company" href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">회사소개</a>
+				<ul id = "CompanySupportingMenu">
+					<li><a href = "./AboutUs.html" onclick="current=0; localStorage.setItem('current', current);">인사말</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=1; localStorage.setItem('current', current);">회사연혁</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=2; localStorage.setItem('current', current);">영업종목</a></li>
+					<li><a href = "./AboutUs.html" onclick="current=3; localStorage.setItem('current', current);">인증서 및 수상</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Product" href = "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">제품소개</a>
+				<ul id = "ProductSupportingMenu">
+					<li><a href= "./IntroductionOfItem.html" onclick="current=0; localStorage.setItem('current', current);">일반기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=1; localStorage.setItem('current', current);">열조리기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=2; localStorage.setItem('current', current);">배식대/콘베이어시스템</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=3; localStorage.setItem('current', current);">냉장기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=4; localStorage.setItem('current', current);">세척기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=5; localStorage.setItem('current', current);">소독기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=6; localStorage.setItem('current', current);">식품가공기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=7; localStorage.setItem('current', current);">취반기구/냉온음수대/배기후드</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=8; localStorage.setItem('current', current);">기타기기류</a></li>
+					<li><a href= "./IntroductionOfItem.html" onclick="current=9; localStorage.setItem('current', current);">협력사</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Performance" href = "./Performance.html" onclick="current=0; localStorage.setItem('current', current);">시공사진</a></li>
+
+			<li><a class = "menu" id = "Service" href="./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current);">고객센터</a>
+				<ul id = "ServiceSupportingMenu">
+					<li><a href= "./ServiceCenter.html" onclick="current=0; localStorage.setItem('current', current); ">공지사항</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=1; localStorage.setItem('current', current);">사후관리</a></li>
+					<li><a href= "./ServiceCenter.html" onclick="current=2; localStorage.setItem('current', current);">자료실</a></li>
+				</ul>
+			</li>
+
+			<li><a class = "menu" id = "Directions" href="./directions.html">오시는 길</a></li>
+		</ul>
+	</header>
+
+	<div>
+		<div><img id = "minbar" src=""></div>
+	</div>
+
+	<div id = "middel">
+		<!--id = container lime pullup-->
+		<div class="pt-triggers">
+			<button id="page1" class="pt-touch-button" onclick="genenal_one(); document.getElementById('genenal').style.display = 'none'; document.getElementsByClassName('pt-page-current')[0].style.display = 'inline-block';">일반기기류</button>
+			<button id="page2" class="pt-touch-button" onclick="gas_one(); document.getElementById('gas').style.display = 'none'; document.getElementById('gass').style.display = 'none'; document.getElementsByClassName('pt-page-current')[0].style.display = 'inline-block';">열조리기기류</button>
+			<button id="page3" class="pt-touch-button" onclick="document.getElementById('distribution').style.display = 'none'; document.getElementById('distributions').style.display = 'none'; document.getElementsByClassName('pt-page-current')[0].style.display = 'inline-block';">배식대/콘베이어시스템</button>
+			<button id="page4" class="pt-touch-button" onclick="refrigerator_one(); document.getElementById('refrigerator').style.display = 'none'; document.getElementsByClassName('pt-page-current')[0].style.display = 'inline-block';">냉장기기류</button>
+			<button id="page5" class="pt-touch-button" onclick="washing_one(); document.getElementById('washing').style.display = 'none'; document.getElementById('second_washing').style.display = 'none'; document.getElementsByClassName('pt-page-current')[0].style.display = 'inline-block';">세척기기류</button>
+			<button id="page6" class="pt-touch-button" onclick="document.getElementById('disinfection').style.display = 'none'; document.getElementById('disinfections').style.display = 'none'; document.getElementsByClassName('pt-page-current')[0].style.display = 'inline-block';">소독기기류</button>
+			<button id="page7" class="pt-touch-button" onclick="document.getElementById('process').style.display = 'none'; document.getElementById('second_process').style.display = 'none'; document.getElementsByClassName('pt-page-current')[0].style.display = 'inline-block';">식품가공기기류</button>
+			<button id="page8" class="pt-touch-button" onclick="document.getElementById('kitchen').style.display = 'none'; document.getElementById('kitchens').style.display = 'none'; document.getElementsByClassName('pt-page-current')[0].style.display = 'inline-block';">취반기구/냉온음수대/배기후드</button>
+			<button id="page9" class="pt-touch-button">기타기기류</button>
+			<button id="page10" class="pt-touch-button">협력사</button>
+		</div><!-- /triggers -->
+
+		<div id="pt-main" class="pt-perspective">
+			<!--1. 일반기기류-->
+			<div class="pt-page" id = "pt-page-1">
+				<!--인증서및 수상 전체-->
+				<div id = "certification">
+					<!--사진 저장소-->
+					<div id = "grid-container">
+						<!--개별 사진 저장-->
+						<div id = "genenal_im01" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "genenal_img1" src="../image/일반기기류/작업대1.png">
+							</div>
+							<a id = "genenal_txt1" class = "txt">작업대</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "genenal_im02" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "genenal_img2" src="../image/일반기기류/작업대하부찬장1.png">
+							</div>
+							<a id = "genenal_txt2" class = "txt">작업대/하부찬장</a>
+						</div>
+
+						<div id = "genenal_im03" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "genenal_img3" src="../image/일반기기류/이동식작업대1.png">
+							</div>
+							<a id = "genenal_txt3" class = "txt">이동식작업대</a>
+						</div>
+
+						<div id = "genenal_im04" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "genenal_img4" src="../image/일반기기류/1조세정대1.png">
+							</div>
+							<a id = "genenal_txt4" class = "txt">1조세정대</a>
+						</div>
+
+						<!--개별 사진 저장-->
+						<div id = "genenal_im05" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "genenal_img5" src="../image/일반기기류/2조세정대1.png">
+							</div>
+							<a id = "genenal_txt5" class = "txt">2조세정대</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "genenal_im06" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "genenal_img6" src="../image/일반기기류/3조세정대1.png">
+							</div>
+							<a id = "genenal_txt6" class = "txt">3조세정대</a>
+						</div>
+
+						<div id = "genenal_im07" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "genenal_img7" src="../image/일반기기류/담금세정대1.png">
+							</div>
+							<a id = "genenal_txt7" class = "txt">담금세정대</a>
+						</div>
+
+						<div id = "genenal_im08" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "genenal_img8" src="../image/일반기기류/이동식세정대1.png">
+							</div>
+							<a id = "genenal_txt8" class = "txt">이동식세정대</a>
+						</div>
+					</div>
+
+					<!--갤러리 현 구역과 다른 구역 이동-->
+					<div class = "paginate">
+						<div class = "go">
+							<a href="../download/e-억조카다록.pdf#page=5" target = "_blank">
+								<button>카탈로그 바로가기</button>
+							</a>
+						</div>
+      					<strong id = "genenal_one" onclick = "genenal_one()">1</strong> <!-- 현재 선택된 페이지-->
+      					<a id = "genenal_two" onclick = "genenal_two()">2</a>
+      					<a id = "genenal_three" onclick = "genenal_three()">3</a>
+      					<a id = "genenal_four" onclick = "genenal_four()">4</a>
+    				</div>
+				</div>
+			</div>
+
+			<!--1.일반기기류 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "genenal">
+				<span id = "genenal_close">&times;</span>
+				<div id = "genenal_leftimages" class = "left">
+					<img id = "genenal_bigimg" src = "">
+
+					<div id = "genenal_biglittleimgs">
+						<div id = "genenal_divimg1" class = "genenal_imgs">
+							<a>
+								<img id = "genenal_minimg1" src="">
+							</a>
+						</div>
+
+						<div id = "genenal_divimg2" class = "genenal_imgs">
+							<a>
+								<img id = "genenal_minimg2" src="">
+							</a>
+						</div>
+
+						<div id = "genenal_divimg3" class = "genenal_imgs">
+							<a>
+								<img id = "genenal_minimg3" src="">
+							</a>
+						</div>
+
+						<div id = "genenal_divimg4" class = "genenal_imgs">
+							<a>
+								<img id = "genenal_minimg4" src="">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div id = "genenal_rightexplanation" class = "right">
+					<h1 id = "genenal_title"></h1>
+
+					<p id = "genenal_explanation"></p>
+				</div>
+				<div id = "genenal_bottom">
+					<h2 id = "pd">
+						PRODECT DETAILS
+					</h2>
+
+					<table>
+						<thead id = "genenal_thead"></thead>
+
+						<tbody id = "genenal_tbody"></tbody>
+					</table>
+				</div>
+			</div>
+
+			<!--2. 열조리기기류-->
+			<div class="pt-page" id = "pt-page-2">
+				<!--인증서및 수상 전체-->
+				<div id = "certification">
+					<!--사진 저장소-->
+					<div id = "grid-container">
+						<!--개별 사진 저장-->
+						<div id = "gas_im01" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "gas_img1" src="../image/2-열조리기기류/가스렌지(노브점화방식)1.png">
+							</div>
+							<a id = "gas_txt1" class = "txt">가스렌지(노브점화방식)</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "gas_im02" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "gas_img2" src="../image/2-열조리기기류/가스낮은렌지(노브점화방식)1.png">
+							</div>
+							<a id = "gas_txt2" class = "txt">가스낮은렌지(노브점화방식)</a>
+						</div>
+
+						<div id = "gas_im03" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "gas_img3" src="../image/2-열조리기기류/가스부침기(노브점화방식)1.png">
+							</div>
+							<a id = "gas_txt3" class = "txt">가스부침기(노브점화방식)</a>
+						</div>
+
+						<div id = "gas_im04" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "gas_img4" src="../image/2-열조리기기류/가스렌지1.png">
+							</div>
+							<a id = "gas_txt4" class = "txt">가스렌지</a>
+						</div>
+
+						<!--개별 사진 저장-->
+						<div id = "gas_im05" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "gas_img5" src="../image/2-열조리기기류/가스낮은렌지1.png">
+							</div>
+							<a id = "gas_txt5" class = "txt">가스낮은렌지</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "gas_im06" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "gas_img6" src="../image/2-열조리기기류/가스부침기1.png">
+							</div>
+							<a id = "gas_txt6" class = "txt">가스부침기</a>
+						</div>
+
+						<div id = "gas_im07" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "gas_img7" src="../image/2-열조리기기류/가스회전식국솥1.png">
+							</div>
+							<a id = "gas_txt7" class = "txt">가스회전식국솥</a>
+						</div>
+
+						<div id = "gas_im08" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "gas_img8" src="../image/2-열조리기기류/스팀회전식국솥1.png">
+							</div>
+							<a id = "gas_txt8" class = "txt">스팀회전식국솥</a>
+						</div>
+					</div>
+
+					<!--갤러리 현 구역과 다른 구역 이동-->
+	    			<div class = "paginate">
+	    				<div class = "go">
+							<a href="../download/e-억조카다록.pdf#page=19" target = "_blank">
+								<button>카탈로그 바로가기</button>
+							</a>
+						</div>
+	      				<strong id = "gas_one" onclick = "gas_one()">1</strong> <!-- 현재 선택된 페이지-->
+	      				<a id = "gas_two" onclick = "gas_two()">2</a>
+	    			</div>
+				</div>
+			</div>
+
+			<!--2-1. 열조리기기 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "gas">
+				<span id = "gas_close">&times;</span>
+					<div id = "gas_leftimages" class = "left">
+						<img id = "gas_bigimg" src = "">
+
+						<div id = "gas_biglittleimgs">
+							<div id = "gas_divimg1" class = "gas_imgs">
+								<a>
+									<img id = "gas_littleimg1" src="">
+								</a>
+							</div>
+
+							<div id = "gas_divimg2" class = "gas_imgs">
+								<a>
+									<img id = "gas_littleimg2" src="">
+								</a>
+							</div>
+
+							<div id = "gas_divimg3" class = "gas_imgs">
+								<a>
+									<img id = "gas_littleimg3" src="">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div id = "gas_rightexplanation" class = "right">
+						<h1 id = "gas_title"></h1>
+
+						<p id = "gas_explanation"></p>
+					</div>
+
+					<div id = "gas_bottom">
+						<h2 id = "pd">
+							PRODECT DETAILS
+						</h2>
+
+						<table>
+							<thead id = "gas_thead"></thead>
+
+							<tbody id = "gas_tbody"></tbody>
+						</table>
+					</div>
+				</span>
+			</div>
+
+			<!--2-2.열조리기기 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "gass">
+				<span id = "gass_close">&times;</span>
+					<div id = "gass_leftimages" class = "left">
+						<img id = "gass_bigimg" src = "">
+					</div>
+
+					<div id = "gass_rightexplanation" class = "right">
+						<h1 id = "gass_title"></h1>
+
+						<p id = "gass_explanation"></p>
+					</div>
+					<div id = "gass_bottom" class = "bottom">
+						<div id = "gass_biglittleimgs">
+							<div id = "gass_divimg1" class = "gass_imgs">
+								<a>
+									<img id = "gass_minimg1" src="">
+								</a>
+							</div>
+
+							<div id = "gass_divimg2" class = "gass_imgs">
+								<a>
+									<img id = "gass_minimg2" src="">
+								</a>
+							</div>
+
+							<div id = "gass_divimg3" class = "gass_imgs">
+								<a>
+									<img id = "gass_minimg3" src="">
+								</a>
+							</div>
+							<div id = "gass_divimg4" class = "gass_imgs">
+								<a>
+									<img id = "gass_minimg4" src="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</span>
+			</div>
+
+			<!--3. 자율배식대/일반배식대류-->
+			<div class="pt-page" id = "pt-page-3">
+				<!--인증서및 수상 전체-->
+				<div id = "certification">
+					<!--사진 저장소-->
+					<div id = "grid-container">
+						<!--개별 사진 저장-->
+						<div id = "distribution_im01" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "distribution_img1" src="../image/3-자율배식대일반배식대류/밥배식대1.png">
+							</div>
+							<a id = "distribution_txt1" class = "txt">밥배식대</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "distribution_im02" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "distribution_img2" src="../image/3-자율배식대일반배식대류/반찬배식대1.png">
+							</div>
+							<a id = "distribution_txt2" class = "txt">반찬배식대</a>
+						</div>
+
+						<div id = "distribution_im03" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "distribution_img3" src="../image/3-자율배식대일반배식대류/자율배식대1.png">
+							</div>
+							<a id = "distribution_txt3" class = "txt">자율배식대</a>
+						</div>
+
+						<div id = "distribution_im04" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "distribution_img4" src="../image/3-자율배식대일반배식대류/콘베어1.png">
+							</div>
+							<a id = "distribution_txt4" class = "txt">배식용/퇴식대 콘베이어시스템</a>
+						</div>
+					</div>
+				</div>
+				<div class = "go">
+					<a href="../download/e-억조카다록.pdf#page=37" target = "_blank">
+						<button>카탈로그 바로가기</button>
+					</a>
+				</div>
+			</div>
+
+			<!--3-1.자울배식대/일반배식대 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "distribution">
+				<span id = "distribution_close">&times;</span>
+					<div id = "distribution_leftimages" class = "left">
+						<img id = "distribution_bigimg" src = "">
+
+						<div id = "distribution_biglittleimgs">
+							<div id = "distribution_divimg1" class = "distribution_imgs">
+								<a>
+									<img id = "distribution_minimg1" src="">
+								</a>
+							</div>
+
+							<div id = "distribution_divimg2" class = "distribution_imgs">
+								<a>
+									<img id = "distribution_minimg2" src="">
+								</a>
+							</div>
+
+							<div id = "distribution_divimg3" class = "distribution_imgs">
+								<a>
+									<img id = "distribution_minimg3" src= "../image/3-자율배식대일반배식대류/반찬배식대3.png">
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div id = "distribution_rightexplanation" class = "right">
+						<h1 id = "distribution_title"></h1>
+
+						<p id = "distribution_explanation"></p>
+					</div>
+					<div id = "distribution_bottom">
+						<h2 id = "pd">
+							PRODECT DETAILS
+						</h2>
+
+						<table>
+							<thead id = "distribution_thead"></thead>
+
+							<tbody id = "distribution_tbody"></tbody>
+						</table>
+					</div>
+				</span>
+			</div>
+
+			<!--3-2.자울배식대/일반배식대 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "distributions">
+				<span id = "distributions_close">&times;</span>
+					<div id = "distributions_leftimages" class = "left">
+						<img id = "distributions_bigimg" src = "">
+					</div>
+
+					<div id = "distributions_rightexplanation" class = "right">
+						<h1 id = "distributions_title"></h1>
+
+						<p id = "distributions_explanation"></p>
+					</div>
+					<div id = "distributions_bottom" class = "bottom">
+						<div id = "distributions_biglittleimgs">
+							<div id = "distributions_divimg1" class = "distributions_imgs">
+								<a>
+									<img id = "distributions_minimg1" src="">
+								</a>
+							</div>
+
+							<div id = "distributions_divimg2" class = "distributions_imgs">
+								<a>
+									<img id = "distributions_minimg2" src="">
+								</a>
+							</div>
+
+							<div id = "distributions_divimg3" class = "distributions_imgs">
+								<a>
+									<img id = "distributions_minimg3" src="">
+								</a>
+							</div>
+
+							<div id = "distributions_divimg4" class = "distributions_imgs">
+								<a>
+									<img id = "distributions_minimg4" src="">
+								</a>
+							</div>
+
+							<div id = "distributions_divimg5" class = "distributions_imgs">
+								<a href="../download/e-억조카다록.pdf#page=38" target = "_blank">
+									<button id = "distributions_buton">카탈로그 바로가기</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</span>
+			</div>
+
+			<!--4. 냉장기기류-->
+			<div class="pt-page" id = "pt-page-4">
+				<div id = "certification">
+					<!--사진 저장소-->
+					<div id = "grid-container">
+						<!--개별 사진 저장-->
+						<div id = "refrigerator_im01" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "refrigerator_img1" src="../image/4-냉장기기류/1-냉동냉장고.png">
+							</div>
+							<a id = "refrigerator_txt1" class = "process_txt">
+								냉동냉장고
+							</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "refrigerator_im02" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "refrigerator_img2" src="../image/4-냉장기기류/2-냉동냉장고.png">
+							</div>
+							<a id = "refrigerator_txt2" class = "process_txt">
+								냉동냉장고
+							</a>
+						</div>
+
+						<div id = "refrigerator_im03" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "refrigerator_img3" src="../image/4-냉장기기류/3-냉동냉장고.png">
+							</div>
+							<a id = "refrigerator_txt3" class = "process_txt">
+								냉동냉장고
+							</a>
+						</div>
+
+						<div id = "refrigerator_im04" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "refrigerator_img4" src="../image/4-냉장기기류/4-냉장테이블.png">
+							</div>
+							<a id = "refrigerator_txt4" class = "process_txt">
+								냉장테이블
+							</a>
+						</div>
+
+						<!--개별 사진 저장-->
+						<div id = "refrigerator_im05" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "refrigerator_img5" src="../image/4-냉장기기류/5-서랍식냉장테이블.png">
+							</div>
+							<a id = "refrigerator_txt5" class = "process_txt">
+								서랍식냉장테이블
+							</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "refrigerator_im06" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "refrigerator_img6" src="../image/4-냉장기기류/6-받드냉장테이블.png">
+							</div>
+							<a id = "refrigerator_txt6" class = "process_txt">
+								받드냉장테이블
+							</a>
+						</div>
+
+						<div id = "refrigerator_im07" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "refrigerator_img7" src="../image/4-냉장기기류/7-토핑냉장테이블.png">
+							</div>
+							<a id = "refrigerator_txt7" class = "process_txt">
+								토핑냉장테이블
+							</a>
+						</div>
+
+						<div id = "refrigerator_im08" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "refrigerator_img8" src="../image/4-냉장기기류/8-사각제과쇼케이스.png">
+							</div>
+							<a id = "refrigerator_txt8" class = "process_txt">
+								사각제과쇼케이스
+							</a>
+						</div>
+
+						<!--갤러리 현 구역과 다른 구역 이동-->
+	    				<div class = "paginate">
+	    					<div class = "go">
+								<a href="../download/e-억조카다록.pdf#page=45" target = "_blank">
+									<button>카탈로그 바로가기</button>
+								</a>
+							</div>
+	      					<strong id = "refrigerator_one" onclick = "refrigerator_one()">1</strong> <!-- 현재 선택된 페이지-->
+	      					<a id = "refrigerator_two" onclick = "refrigerator_two()">2</a>
+	    				</div>
+					</div>
+				</div>
+			</div>
+
+			<!--4.냉장기기류 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "refrigerator">
+				<span id = "refrigerator_close">&times;</span>
+					<div id = "refrigerator_leftimages" class = "left">
+						<img id = "refrigerator_bigimg" src = "">
+
+						<div id = "refrigerator_biglittleimgs">
+							<div id = "refrigerator_divimg1" class = "refrigerator_imgs">
+								<a>
+									<img id = "refrigerator_minimg1" src="">
+								</a>
+							</div>
+
+							<div id = "refrigerator_divimg2" class = "refrigerator_imgs">
+								<a>
+									<img id = "refrigerator_minimg2" src="">
+								</a>
+							</div>
+
+							<div id = "refrigerator_divimg3" class = "refrigerator_imgs">
+								<a>
+									<img id = "refrigerator_minimg3" src="../image/4-냉장기기류/10.2-냉동창고.jpg">
+								</a>
+							</div>
+
+							<div id = "refrigerator_divimg4" class = "refrigerator_imgs">
+								<a>
+									<img id = "refrigerator_minimg4" src="../image/4-냉장기기류/10.3-냉동창고.jpg">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div id = "refrigerator_rightexplanation" class = "right">
+						<h1 id = "refrigerator_title"></h1>
+
+						<p id = "refrigerator_explanation"></p>
+
+						<h2 id = "pd">
+							<br><br>PRODECT DETAILS
+						</h2>
+
+						<p id = "refrigerator_standard"></p>
+
+					</div>
+				</span>
+			</div>
+
+			<!--5. 세척기기류-->
+			<div class="pt-page" id = "pt-page-5">
+				<!--인증서및 수상 전체-->
+				<div id = "certification">
+					<!--사진 저장소-->
+					<div id = "grid-container">
+						<!--개별 사진 저장-->
+						<div id = "washing_im01" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "washing_img1" src="../image/5-세척기기류/1-도어타입세척기.png">
+							</div>
+							<a id = "washing_txt1" class = "txt">도어타입세척기</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "washing_im02" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "washing_img2" src="../image/5-세척기기류/2-랙콘베아타입2개.png">
+							</div>
+							<a id = "washing_txt2" class = "txt">랙콘베이어타입세척기</a>
+						</div>
+
+						<div id = "washing_im03" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "washing_img3" src="../image/5-세척기기류/3-식기세척기1탱크.png">
+							</div>
+							<a id = "washing_txt3" class = "txt">플라이트타입 1TANK 일반형</a>
+						</div>
+
+						<div id = "washing_im04" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "washing_img4" src="../image/5-세척기기류/4-식기세척기1탱크드라이.png">
+							</div>
+							<a id = "washing_txt4" class = "txt">플라이트타입 1TANK 건조형</a>
+						</div>
+
+						<!--개별 사진 저장-->
+						<div id = "washing_im05" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "washing_img5" src="../image/5-세척기기류/5-식기세척기2탱크.png">
+							</div>
+							<a id = "washing_txt5" class = "txt">플라이트타입 2TANK 일반형</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "washing_im06" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "washing_img6" src="../image/5-세척기기류/6-식기세척기2탱크드라이.png">
+							</div>
+							<a id = "washing_txt6" class = "txt">플라이트타입 2TANK 건조형</a>
+						</div>
+
+						<div id = "washing_im07" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "washing_img7" src="../image/5-세척기기류/7-식기세척기3탱크.png">
+							</div>
+							<a id = "washing_txt7" class = "txt">플라이트타입 2TANK 일반형</a>
+						</div>
+
+						<div id = "washing_im08" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "washing_img8" src="../image/5-세척기기류/8-식기세척기3탱크드라이.png">
+							</div>
+							<a id = "washing_txt8" class = "txt">플라이트타입 2TANK 건조형</a>
+						</div>
+					</div>
+
+					<!--갤러리 현 구역과 다른 구역 이동-->
+	    			<div class = "paginate">
+	    				<div class = "go">
+							<a href="../download/e-억조카다록.pdf#page=57" target = "_blank">
+								<button>카탈로그 바로가기</button>
+							</a>
+						</div>
+	      				<strong id = "washing_one" onclick = "washing_one()">1</strong> <!-- 현재 선택된 페이지-->
+	      				<a id = "washing_two" onclick = "washing_two()">2</a>
+	    			</div>
+				</div>
+			</div>
+
+			<!--5-1.세척기기류 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "washing">
+				<span id = "washing_close">&times;</span>
+					<div id = "washing_leftimages" class = "left">
+						<img id = "washing_bigimg" src = "">
+					</div>
+
+					<div id = "washing_rightexplanation" class = "right">
+						<h1 id = "washing_title"></h1>
+
+						<h2 id = "pd">
+							PRODECT DETAILS
+						</h2>
+
+						<p id = "washing_standard"></p>
+					</div>
+				</span>
+			</div>
+
+			<!--5-2.세척기기류 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "second_washing">
+				<span id = "second_washing_close">&times;</span>
+					<div id = "second_washing_leftimages" class = "left">
+						<img id = "second_washing_bigimg" src = "">
+					</div>
+
+					<div id = "second_washing_rightexplanation" class = "right">
+						<h1 id = "second_washing_title"></h1>
+
+						<h2 id = "pd">
+							PRODECT DETAILS
+						</h2>
+
+						<table id = "second_washing_table">
+							<tbody id = "second_washing_thead"></tbody>
+						</table>
+					</div>
+				</span>
+			</div>
+
+			<!--6. 소독기기류-->
+			<div class="pt-page" id = "pt-page-6">
+				<!--인증서및 수상 전체-->
+				<div id = "certification">
+					<!--사진 저장소-->
+					<div id = "grid-container">
+						<!--개별 사진 저장-->
+						<div id = "disinfection_im01" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "disinfection_img1" src="../image/6-소독기기류/전기식기소독고1.png">
+							</div>
+							<a id = "disinfection_txt1" class = "txt">전기식기소독고</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "disinfection_im02" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "disinfection_img2" src="../image/6-소독기기류/손세정대(페달식).png">
+							</div>
+							<a id = "disinfection_txt2" class = "txt">손세정대(페달식)</a>
+						</div>
+
+						<div id = "disinfection_im03" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "disinfection_img3" src="../image/6-소독기기류/HACCP1.png">
+							</div>
+							<a id = "disinfection_txt3" class = "txt">HACCP</a>
+						</div>
+
+						<div id = "disinfection_im04" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "disinfection_img4" src="">
+							</div>
+							<a id = "disinfection_txt4" class = "txt"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class = "go">
+					<a href="../download/e-억조카다록.pdf#page=65" target = "_blank">
+						<button>카탈로그 바로가기</button>
+					</a>
+				</div>
+			</div>
+
+
+			<!--6-1.소독기기류 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "disinfection">
+				<span id = "disinfection_close">&times;</span>
+				<div id = "disinfection_leftimages" class = "left">
+					<img id = "disinfection_bigimg" src = "">
+
+					<div id = "disinfection_biglittleimgs">
+						<div id = "disinfection_divimg1" class = "disinfection_imgs">
+							<a>
+								<img id = "disinfection_minimg1" src="../image/6-소독기기류/전기식기소독고1.png">
+							</a>
+						</div>
+
+						<div id = "disinfection_divimg2" class = "disinfection_imgs">
+							<a>
+								<img id = "disinfection_minimg2" src="../image/6-소독기기류/전기식기소독고2.png">
+							</a>
+						</div>
+
+						<div id = "disinfection_divimg3" class = "disinfection_imgs">
+							<a>
+								<img id = "disinfection_minimg3" src="../image/6-소독기기류/전기식기소독고3.png">
+							</a>
+						</div>
+
+						<div id = "disinfection_divimg4" class = "disinfection_imgs">
+							<a>
+								<img id = "disinfection_minimg4" src="../image/6-소독기기류/전기식기소독고4.png">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div id = "disinfection_rightexplanation" class = "right">
+					<h1 id = "disinfection_title"></h1>
+
+					<p id = "disinfection_explanation"></p>
+
+				</div>
+				<div id = "disinfection_bottom">
+					<h2 id = "pd">
+						PRODECT DETAILS
+					</h2>
+
+					<table>
+						<thead id = "disinfection_thead"></thead>
+
+						<tbody id = "disinfection_tbody"></tbody>
+					</table>
+				</div>
+			</div>
+
+			<!--6-2.소독기기류 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "disinfections">
+				<span id = "disinfections_close">&times;</span>
+				<h1 id = "disinfections_title"></h1>
+				<div id = "disinfections_leftimages" class = "left">
+
+					<div id = "disinfections_biglittleimgs">
+						<div id = "disinfections_divimg1" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg1" src="../image/6-소독기기류/HACCP1.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg2" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg2" src="../image/6-소독기기류/HACCP2.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg3" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg3" src="../image/6-소독기기류/HACCP3.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg4" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg4" src="../image/6-소독기기류/HACCP4.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg5" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg5" src="../image/6-소독기기류/HACCP5.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg6" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg6" src="../image/6-소독기기류/HACCP6.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg7" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg7" src="../image/6-소독기기류/HACCP7.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg8" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg8" src="../image/6-소독기기류/HACCP8.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg9" class = "disinfections_imgs">
+							<a>
+								<img id = "disinfections_minimg9" src="../image/6-소독기기류/HACCP9.png">
+							</a>
+						</div>
+
+						<div id = "disinfections_divimg10" class = "disinfections_imgs">
+							<a href="../download/e-억조카다록.pdf#page=65" target = "_blank">
+								<button id = "disinfections_buton">카탈로그 바로가기</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--7. 식품가공기기류-->
+			<div class="pt-page" id = "pt-page-7">
+				<!--인증서및 수상 전체-->
+				<div id = "certification">
+					<!--사진 저장소-->
+					<div id = "grid-container">
+						<!--개별 사진 저장-->
+						<div id = "process_im01" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "process_img1" src="../image/7-가공기기류/1-야채절단기HMV-200.png">
+							</div>
+							<a id = "process_txt1" class = "process_txt">
+								야채절단기 (HMV-200)
+							</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "process_im02" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "process_img2" src="../image/7-가공기기류/2-야채절단기채고야500.png">
+							</div>
+							<a id = "process_txt2" class = "process_txt">
+								야채절단기 (채고야 500)
+							</a>
+						</div>
+
+						<div id = "process_im03" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "process_img3" src="../image/7-가공기기류/3-민서기M-22S.png">
+							</div>
+							<a id = "process_txt3" class = "process_txt">
+								민서기 (M-22S)
+							</a>
+						</div>
+
+						<div id = "process_im04" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "process_img4" src="../image/7-가공기기류/4-민서기M-12S.png">
+							</div>
+							<a id = "process_txt4" class = "process_txt">
+								민서기 (M-12S)
+							</a>
+						</div>
+						<!--개별 사진 저장-->
+						<div id = "process_im05" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "process_img5" src="../image/7-가공기기류/5-민서기MN-22S.png">
+							</div>
+							<a id = "process_txt5" class = "process_txt">
+								민서기 (MN-22S)
+							</a>
+						</div>
+						<!--사진 한장 끝-->
+						<div id = "process_im06" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "process_img6" src="../image/7-가공기기류/6-감자탈피기.png">
+							</div>
+							<a id = "process_txt6" class = "process_txt">
+								감자탈피기
+							</a>
+						</div>
+
+						<div id = "process_im07" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "process_img7" src="../image/7-가공기기류/7-슬라이서HS-1N.png">
+							</div>
+							<a id = "process_txt7" class = "process_txt">
+								슬라이서 (HS 시리즈)
+							</a>
+						</div>
+
+						<div id = "process_im08" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "process_img8" src="../image/7-가공기기류/8-슬라이서GS-12A.png">
+							</div>
+							<a id = "process_txt8" class = "process_txt">
+								슬라이서 (GS 시리즈)
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class = "go">
+					<a href="../download/e-억조카다록.pdf#page=75" target = "_blank">
+						<button>카탈로그 바로가기</button>
+					</a>
+				</div>
+			</div>
+
+			<!--7-1.가공기기류 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "process">
+				<span id = "process_close">&times;</span>
+					<div id = "process_leftimages" class = "left">
+						<img id = "process_bigimg" src = "">
+					</div>
+
+					<div id = "process_rightexplanation" class = "right">
+						<h1 id = "process_title"></h1>
+
+						<p id = "process_explanation"></p>
+
+						<h2 id = "pd">
+							PRODECT DETAILS
+						</h2>
+
+						<p id = "process_standard"></p>
+
+						<h4 id = "process_knife">
+							칼날구성
+						</h4>
+
+						<img id = "process_knife_img" src="">
+					</div>
+				</span>
+			</div>
+
+			<!--7-2.가공기기류 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "second_process">
+				<span id = "second_process_close">&times;</span>
+					<div id = "second_process_leftimages" class = "left">
+						<img id = "second_process_bigimg" src = "">
+
+						<div id = "second_process_biglittleimgs">
+							<div id = "second_process_divimg1" class = "second_process_imgs">
+								<p id = "second_process_txt1"></p>
+								<a>
+									<img id = "second_process_img1" src="">
+								</a>
+							</div>
+
+							<div id = "second_process_divimg2" class = "second_process_imgs">
+								<p id = "second_process_txt2"></p>
+								<a>
+									<img id = "second_process_img2" src="">
+								</a>
+							</div>
+
+							<div id = "second_process_divimg3" class = "second_process_imgs">
+								<p id = "second_process_txt3"></p>
+								<a>
+									<img id = "second_process_img3" src="">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div id = "second_process_rightexplanation" class = "right">
+						<h1 id = "second_process_title"></h1>
+
+						<p id = "second_process_explanation"></p>
+					</div>
+
+					<div id = "second_bottom">
+						<h2 id = "pd">
+							PRODECT DETAILS
+						</h2>
+
+						<table>
+							<thead id = "process_thead"></thead>
+
+							<tbody id = "process_tbody"></tbody>
+						</table>
+					</div>
+				</span>
+			</div>
+
+			<!--8. 취반기구/냉온정수기/배기후드-->
+			<div class="pt-page" id = "pt-page-8">
+				<!--인증서및 수상 전체-->
+				<div id = "certification">
+					<!--사진 저장소-->
+					<div id = "grid-container">
+						<!--개별 사진 저장-->
+						<div id = "kitchen_im01" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "kitchen_img1" src="../image/8-취반기기&냉온음수대&배기후드/냉온음수대1.png">
+							</div>
+							<a id = "kitchen_txt1" class = "txt">냉온음수대</a>
+						</div>
+						<!--사진 한장 끝-->
+
+						<div id = "kitchen_im02" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "kitchen_img2" src="../image/8-취반기기&냉온음수대&배기후드/수압식세미기.png">
+							</div>
+							<a id = "kitchen_txt2" class = "txt">수압식세미기</a>
+						</div>
+
+						<div id = "kitchen_im03" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "kitchen_img3" src="../image/8-취반기기&냉온음수대&배기후드/배기후드1.png">
+							</div>
+							<a id = "kitchen_txt3" class = "txt">배기후드</a>
+						</div>
+
+						<div id = "kitchen_im04" class = "location_imgs">
+							<div class = "location_img">
+								<img id = "kitchen_img4" src="../image/8-취반기기&냉온음수대&배기후드/주방환기 모듈 천장시스템1.png">
+							</div>
+							<a id = "kitchen_txt4" class = "txt">주방환기 모듈 천장시스템</a>
+						</div>
+					</div>
+				</div>
+
+				<div class = "go">
+					<a href="../download/e-억조카다록.pdf#page=99" target = "_blank">
+						<button>카탈로그 바로가기</button>
+					</a>
+				</div>
+			</div>
+
+			<!--8-1.취반기기&냉온정수기&배기후드 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "kitchen">
+				<span id = "kitchen_close">&times;</span>
+					<div id = "kitchen_leftimages" class = "left">
+						<img id = "kitchen_bigimg" src = "">
+
+						<div id = "kitchen_biglittleimgs">
+							<div id = "kitchen_divimg1" class = "kitchen_imgs">
+								<a>
+									<img id = "kitchen_minimg1" src="../image/8-취반기기&냉온음수대&배기후드/냉온음수대1.png">
+								</a>
+							</div>
+
+							<div id = "kitchen_divimg2" class = "kitchen_imgs">
+								<a>
+									<img id = "kitchen_minimg2" src="../image/8-취반기기&냉온음수대&배기후드/냉온음수대2.png">
+								</a>
+							</div>
+
+							<div id = "kitchen_divimg3" class = "kitchen_imgs">
+								<a>
+									<img id = "kitchen_minimg3" src="../image/8-취반기기&냉온음수대&배기후드/냉온음수대3.png">
+								</a>
+							</div>
+
+							<div id = "kitchen_divimg4" class = "kitchen_imgs">
+								<a>
+									<img id = "kitchen_minimg4" src="../image/8-취반기기&냉온음수대&배기후드/냉온음수대4.png">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div id = "kitchen_rightexplanation" class = "right">
+						<h1 id = "kitchen_title"></h1>
+
+						<p id = "kitchen_explanation"></p>
+					</div>
+					<div id = "kitchen_bottom">
+						<h2 id = "pd">
+							PRODECT DETAILS
+						</h2>
+
+						<table>
+							<thead id = "kitchen_thead"></thead>
+
+							<tbody id = "kitchen_tbody"></tbody>
+						</table>
+					</div>
+				</span>
+			</div>
+
+			<!--8-2.취반기기&냉온정수기&배기후드 사진을 클릭했을때 확대 기능-->
+			<div class = "myModal" id = "kitchens">
+				<span id = "kitchens_close">&times;</span>
+					<div id = "kitchens_leftimages" class = "left">
+						<img id = "kitchens_bigimg" src = "">
+					</div>
+
+					<div id = "kitchens_rightexplanation" class = "right">
+						<h1 id = "kitchens_title"></h1>
+
+						<p id = "kitchens_explanation"></p>
+					</div>
+					<div id = "kitchens_bottom" class = "bottom">
+						<div id = "kitchens_biglittleimgs">
+							<div id = "kitchens_divimg1" class = "kitchens_imgs">
+								<a>
+									<img id = "kitchens_minimg1" src="">
+								</a>
+							</div>
+
+							<div id = "kitchens_divimg2" class = "kitchens_imgs">
+								<a>
+									<img id = "kitchens_minimg2" src="">
+								</a>
+							</div>
+
+							<div id = "kitchens_divimg3" class = "kitchens_imgs">
+								<a>
+									<img id = "kitchens_minimg3" src="">
+								</a>
+							</div>
+
+							<div id = "kitchens_divimg4" class = "kitchens_imgs">
+								<a>
+									<img id = "kitchens_minimg4" src="">
+								</a>
+							</div>
+
+							<div id = "kitchens_divimg5" class = "kitchens_imgs">
+								<a href="../image/8-취반기기&냉온음수대&배기후드/주방환기시스템사양서.pdf" target = "_blank">
+									<button id = "kitchens_buton">사양서 바로가기</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</span>
+			</div>
+
+			<!--9. 기타기기류-->
+			<div class="pt-page" id = "pt-page-9">
+				<!--병원용 기구류-->
+				<div class = "etc">
+					<img src="../image/기타기기/병원용.jpg">
+
+
+					<a href="../download/e-억조카다록.pdf#page=107" target = "_blank">
+						<div>
+							<p>병원기기 카탈로그바로가기</p>
+						</div>
+					</a>
+				</div>
+
+				<!--기타주방용품-->
+				<div class = "etc">
+					<img src="../image/기타기기/기타.jpg">
+
+					<a href="../download/e-억조카다록.pdf#page=83" target = "_blank">
+						<div>
+							<p>기타주방용품 카탈로그바로가기</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<!--10. 협력사-->
+			<div class="pt-page" id = "pt-page-10">
+				<div class = "partner firsts">
+					<a id = "partner_url01" href="http://www.rinnai.co.kr" target = "_blank">
+						<img id = "partner_img01" src="../image/협력사마크/1-린나이코리아.jpg">
+						<p id = "partner_txt01">린나이코리아(주)</p>
+					</a>
+				</div>
+
+				<div class = "partner">
+					<a id = "partner_url02" href="http://www.kwmy.co.kr" target = "_blank">
+						<img id = "partner_img02" src="../image/협력사마크/2-광명상사.jpg">
+						<p id = "partner_txt02">(주)광명상사</p>
+					</a>
+				</div>
+
+				<div class = "partner">
+					<a id = "partner_url03" href="http://www.guwha.co.kr" target = "_blank">
+						<img id = "partner_img03" src="../image/협력사마크/3-거화산업.jpg">
+						<p id = "partner_txt03">거화산업</p>
+					</a>
+				</div>
+
+				<div class = "partner lasts">
+					<a id = "partner_url04" href="http://www.nanoi.co.kr" target = "_blank">
+						<img id = "partner_img04" src="../image/협력사마크/4-나노전자.jpg">
+						<p id = "partner_txt04">나노전자</p>
+					</a>
+				</div>
+
+				<div class = "partner firsts">
+					<a id = "partner_url05" href="http://www.idaekyo.co.kr" target = "_blank">
+						<img id = "partner_img05" src="../image/협력사마크/5-대교통상.jpg">
+						<p id = "partner_txt05">(주)대교통상</p>
+					</a>
+				</div>
+
+				<div class = "partner">
+					<a id = "partner_url06" href="http://www.daeyung.co.kr" target = "_blank">
+						<img id = "partner_img06" src="../image/협력사마크/6-대영제과제빵기계.jpg">
+						<p id = "partner_txt06">대영제과제빵기계(주)</p>
+					</a>
+				</div>
+
+				<div class = "partner">
+					<a id = "partner_url07" href="http://www.daijin-ent.co.kr" target = "_blank">
+						<img id = "partner_img07" src="../image/협력사마크/7-대진엔터프라이즈.jpg">
+						<p id = "partner_txt07">대진엔터프라이즈</p>
+					</a>
+				</div>
+
+				<div class = "partner lasts">
+					<a id = "partner_url08" href="http://www.dipoelec.com" target = "_blank">
+						<img id = "partner_img08" src="../image/협력사마크/8-디포인덕션.jpg">
+						<p id = "partner_txt08">(주)디포인덕션</p>
+					</a>
+				</div>
+
+				<div class = "partner firsts">
+					<a id = "partner_url09" href="https://lassele.com" target = "_blank">
+						<img id = "partner_img09" src="../image/협력사마크/9-라셀르.jpg">
+						<p id = "partner_txt09">(주)라셀르</p>
+					</a>
+				</div>
+
+				<div class = "partner">
+					<a id = "partner_url10" href="http://www.rationalkorea.co.kr" target = "_blank">
+						<img id = "partner_img10" src="../image/협력사마크/10-라치오날코리아.jpg">
+						<p id = "partner_txt10">라치오날코리아(주)</p>
+					</a>
+				</div>
+
+				<div class = "partner">
+					<a id = "partner_url11" href="http://www.busungrh.com" target = "_blank">
+						<img id = "partner_img11" src="../image/협력사마크/11-부성.jpg">
+						<p id = "partner_txt11">(주)부성</p>
+					</a>
+				</div>
+
+				<div class = "partner lasts">
+					<a id = "partner_url12" href="http://www.sun-kyung.co.kr" target = "_blank">
+						<img id = "partner_img12" src="../image/협력사마크/12-선경산업.jpg">
+						<p id = "partner_txt12">선경산업</p>
+					</a>
+				</div>
+
+				<!--갤러리 현 구역과 다른 구역 이동-->
+	    		<div class = "paginate">
+	      			<strong id = "partner_one" onclick = "partner_one()">1</strong> <!-- 현재 선택된 페이지-->
+	      			<a id = "partner_two" onclick = "partner_two()">2</a>
+	      			<a id = "partner_three" onclick = "partner_three()">3</a>
+	    		</div>
+			</div>
+		</div>
+	</div>
+
+	<div id = "footer">
+		<img src = ../image/메인/Botton.jpeg>
+	</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="../js/IntroductionOfItem.js"></script>
+<script type="text/javascript" src="../js/Page_IntroductionOfItem.js"></script>
+<script type="text/javascript" src="../js/gas.js"></script>
+<script type="text/javascript" src="../js/genenal.js"></script>
+<script type="text/javascript" src="../js/partner.js"></script>
+<script type="text/javascript" src="../js/process.js"></script>
+<script type="text/javascript" src="../js/refrigerator.js"></script>
+<script type="text/javascript" src="../js/washing.js"></script>
+<script type="text/javascript" src="../js/distribution.js"></script>
+<script type="text/javascript" src="../js/disinfection.js"></script>
+<script type="text/javascript" src="../js/kitchen.js"></script>
+<script type="text/javascript" src="../js/load.js"></script>
+</html>
