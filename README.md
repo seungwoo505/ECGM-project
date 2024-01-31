@@ -2,6 +2,8 @@
 
 지인이 회사 홈페이지 만들어달라해서 제작
 
+개인 기여도 : 100% (디자인 제외)
+
 # UI
 ![ECGM](https://github.com/seungwoo505/ECGM-Project/blob/main/mainScreen.png)
 
