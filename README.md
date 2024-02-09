@@ -9,6 +9,12 @@
 ## UI
 ![ECGM](https://github.com/seungwoo505/ECGM-Project/blob/main/mainScreen.png)
 
+## 설명
+
+메인 페이지에서 간략한 회사 소개와 메인 제품 소개가 있습니다.
+
+제품을 클릭하면 상세한 설명으로 넘어가며 오시는 길 같은 경우 네이버 API를 통해 지도 정보를 받아 회사 위치를 표시해줍니다.
+
 ## 주의사항
 
 Download 폴더의 pdf파일이 100MB가 넘어 압축했습니다. 정상적인 이용을 위해 압축을 해제해주세요.
