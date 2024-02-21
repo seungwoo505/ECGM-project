@@ -6,6 +6,8 @@
 
 개인 기여도 : 100%
 
+제작 기간 : 2019.11 ~ 2020.01
+
 ## UI
 ![ECGM](https://github.com/seungwoo505/ECGM-Project/blob/main/mainScreen.png)
 
