@@ -9,7 +9,7 @@
 제작 기간 : 2019.11 ~ 2020.01
 
 ## UI
-![ECGM](https://github.com/seungwoo505/ECGM-Project/blob/main/mainScreen.png)
+<img src="https://github.com/seungwoo505/ECGM-Project/blob/main/mainScreen.png" height="500"/>
 
 ## 설명
 
